@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio.github.io/static/css/main.dba4ebe9.css",
-    "main.js": "/portfolio.github.io/static/js/main.4223d70b.js",
-    "static/media/chess.png": "/portfolio.github.io/static/media/chess.45cd8538d41917460b95.png",
-    "static/media/chatapp.png": "/portfolio.github.io/static/media/chatapp.46fc36bb5c11f9ba89cd.png",
-    "static/media/home-main.svg": "/portfolio.github.io/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
-    "static/media/about.png": "/portfolio.github.io/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/deployr.png": "/portfolio.github.io/static/media/deployr.6d5b91640eff28b93eef.png",
-    "static/media/mini-project.png": "/portfolio.github.io/static/media/mini-project.b7f20b3a7cf9507d8b1f.png",
-    "static/media/decentrack.png": "/portfolio.github.io/static/media/decentrack.c57089785a734e812497.png",
-    "static/media/resume.pdf": "/portfolio.github.io/static/media/resume.d786beff9a1543bf5025.pdf",
-    "static/media/home-bg.jpg": "/portfolio.github.io/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
-    "static/media/sLogo.png": "/portfolio.github.io/static/media/sLogo.fbf5685094ecde30a712.png",
-    "static/media/pre.svg": "/portfolio.github.io/static/media/pre.d4812f51c8c80976eaab.svg",
-    "index.html": "/portfolio.github.io/index.html",
-    "main.dba4ebe9.css.map": "/portfolio.github.io/static/css/main.dba4ebe9.css.map",
-    "main.4223d70b.js.map": "/portfolio.github.io/static/js/main.4223d70b.js.map"
+    "main.css": "/static/css/main.01f590ae.css",
+    "main.js": "/static/js/main.450f7a98.js",
+    "static/media/chess.png": "/static/media/chess.45cd8538d41917460b95.png",
+    "static/media/chatapp.png": "/static/media/chatapp.46fc36bb5c11f9ba89cd.png",
+    "static/media/home-main.svg": "/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
+    "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/deployr.png": "/static/media/deployr.6d5b91640eff28b93eef.png",
+    "static/media/mini-project.png": "/static/media/mini-project.b7f20b3a7cf9507d8b1f.png",
+    "static/media/decentrack.png": "/static/media/decentrack.c57089785a734e812497.png",
+    "static/media/resume.pdf": "/static/media/resume.d786beff9a1543bf5025.pdf",
+    "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/sLogo.png": "/static/media/sLogo.fbf5685094ecde30a712.png",
+    "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "/index.html",
+    "main.01f590ae.css.map": "/static/css/main.01f590ae.css.map",
+    "main.450f7a98.js.map": "/static/js/main.450f7a98.js.map"
   },
   "entrypoints": [
-    "static/css/main.dba4ebe9.css",
-    "static/js/main.4223d70b.js"
+    "static/css/main.01f590ae.css",
+    "static/js/main.450f7a98.js"
   ]
 }
