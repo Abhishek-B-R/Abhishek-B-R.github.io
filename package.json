@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abhishek-b-r.github.io/portfolio",
+    "homepage": "https://abhishek-b-r.github.io/portfolio.github.io/",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",
