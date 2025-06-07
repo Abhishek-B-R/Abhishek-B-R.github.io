@@ -1,26 +1,19 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import { AiOutlineDownload } from "react-icons/ai";
+"use client"
 
-import Particle from '../components/Particle'
+import { useState, useEffect } from "react"
+import { Container, Row } from "react-bootstrap"
+import Button from "react-bootstrap/Button"
+import { AiOutlineDownload } from "react-icons/ai"
+
+import Particle from "../components/Particle"
 import pdf from "../assets/resume.pdf"
 
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import "react-pdf/dist/esm/Page/TextLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
-const resumeLink = `https://raw.githubusercontent.com/abhishek-b-r/abhishek-b-r.github.io/main/src/assets/resume.pdf`
-
-
 const Resume = () => {
-  const [width, setWidth] = useState(1200);
+  const [width, setWidth] = useState(1200)
 
   useEffect(() => {
-    
-    setWidth(window.innerWidth);
-  }, []);
+    setWidth(window.innerWidth)
+  }, [])
 
   return (
     <div>
@@ -32,18 +25,31 @@ const Resume = () => {
             href={pdf}
             target="_blank"
             style={{ maxWidth: "250px" }}
+            className="d-flex align-items-center justify-content-center"
           >
-           <div className="scale-200 ml-20 mt-2">
-            <AiOutlineDownload />
+            <div className="me-2">
+              <AiOutlineDownload size={20} />
             </div>
-            <div className="-mt-5">&nbsp;Download Resume</div>
+            <span>Download Resume</span>
           </Button>
         </Row>
 
-        <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
+        <Row className="resume d-flex justify-content-center mt-4 mb-4">
+          <div className="resume-image-container flex justify-center" style={{ textAlign: "center" }}>
+            <img
+              src="/resume.png"
+              alt="Resume"
+              className="resume-image"
+              style={{
+                maxWidth: "40%",
+                height: "auto",
+                width: width > 786 ? "85%" : "95%",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                borderRadius: "8px",
+                border: "1px solid #ddd",
+              }}
+            />
+          </div>
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
@@ -52,12 +58,12 @@ const Resume = () => {
             href={pdf}
             target="_blank"
             style={{ maxWidth: "250px" }}
-            className="flex"
+            className="d-flex align-items-center justify-content-center"
           >
-           <div className="scale-200 ml-20 mt-2">
-            <AiOutlineDownload />
+            <div className="me-2">
+              <AiOutlineDownload size={20} />
             </div>
-            <div className="-mt-5">&nbsp;Download Resume</div>
+            <span>Download Resume</span>
           </Button>
         </Row>
       </Container>

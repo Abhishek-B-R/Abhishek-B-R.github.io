@@ -19,7 +19,7 @@ const Skillset = () => {
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="yellow">Tools</strong> I use
+          <strong className="yellow">Tools</strong> I use regularly ...
         </h1>
         <Toolstack />
 

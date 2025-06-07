@@ -10,122 +10,160 @@ export default function CaseStudy({
   inferencesAndImpact,
 }) {
   return (
-    <div className="max-w-4xl mx-auto p-6 space-y-8">
+    <div className="max-w-5xl mx-auto p-8 space-y-12 mt-20">
       {/* Case Study Title */}
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-2">{caseStudyTitle}</h1>
-        <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800">
+      <div className="text-center space-y-4">
+        <h1 className="text-5xl md:text-6xl text-white font-extrabold bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 leading-tight">
+          {caseStudyTitle}
+        </h1>
+        <div className="inline-flex items-center px-6 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-blue-50 to-indigo-50 text-indigo-700 border border-indigo-200 shadow-sm">
+          <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
           Technical Case Study
         </div>
       </div>
 
-      <hr className="border-gray-200" />
+      <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
 
       {/* Business Challenge */}
-      <div className="bg-white rounded-lg border border-gray-200 shadow-sm">
-        <div className="px-6 py-4 border-b border-gray-200">
-          <h2 className="text-xl font-semibold text-gray-900 flex items-center gap-2">
-            <TrendingUp className="h-5 w-5 text-blue-600" />
+      <div className="group hover:shadow-xl transition-all duration-300 bg-white rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
+        <div className="px-8 py-6 bg-gradient-to-r from-blue-50 to-indigo-50 border-b border-blue-100">
+          <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
+            <div className="p-2 bg-blue-500 rounded-lg shadow-sm">
+              <TrendingUp className="h-6 w-6 text-white" />
+            </div>
             Business Challenge
           </h2>
         </div>
-        <div className="px-6 py-4">
-          <div className="text-gray-700 leading-relaxed">{businessChallenge}</div>
+        <div className="px-8 py-6">
+          <div className="text-gray-700 leading-relaxed text-lg font-medium">{businessChallenge}</div>
         </div>
       </div>
 
       {/* Data Structures & Algorithms */}
-      <div className="bg-white rounded-lg border border-gray-200 shadow-sm">
-        <div className="px-6 py-4 border-b border-gray-200">
-          <h2 className="text-xl font-semibold text-gray-900 flex items-center gap-2">
-            <BookOpen className="h-5 w-5 text-green-600" />
+      <div className="group hover:shadow-xl transition-all duration-300 bg-white rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
+        <div className="px-8 py-6 bg-gradient-to-r from-green-50 to-emerald-50 border-b border-green-100">
+          <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
+            <div className="p-2 bg-green-500 rounded-lg shadow-sm">
+              <BookOpen className="h-6 w-6 text-white" />
+            </div>
             Data Structures & Algorithms
           </h2>
         </div>
-        <div className="px-6 py-4 space-y-4">
-          <div className="text-gray-700 leading-relaxed">{dataStructuresAndAlgorithms.content}</div>
-          <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-            <h4 className="font-semibold mb-2 text-gray-800">Implementation:</h4>
-            <pre className="bg-gray-900 text-gray-100 p-4 rounded-md overflow-x-auto text-sm">
-              <code>{dataStructuresAndAlgorithms.code}</code>
-            </pre>
+        <div className="px-8 py-6 space-y-6">
+          <div className="text-gray-700 leading-relaxed text-lg font-medium">{dataStructuresAndAlgorithms.content}</div>
+          <div className="bg-gradient-to-br from-gray-50 to-slate-50 rounded-xl p-6 border border-gray-200 shadow-inner">
+            <h4 className="font-bold mb-4 text-gray-800 text-lg flex items-center gap-2">
+              <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+              Implementation:
+            </h4>
+            <div className="relative">
+              <pre className="bg-gradient-to-br text-left from-gray-900 to-slate-800 text-gray-100 p-6 rounded-xl overflow-x-auto text-sm border border-gray-700 shadow-lg">
+                <code className="font-mono">{dataStructuresAndAlgorithms.code}</code>
+              </pre>
+              <div className="absolute top-4 right-4 flex space-x-1">
+                <div className="w-3 h-3 bg-red-400 rounded-full"></div>
+                <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Models and Figures */}
-      <div className="bg-white rounded-lg border border-gray-200 shadow-sm">
-        <div className="px-6 py-4 border-b border-gray-200">
-          <h2 className="text-xl font-semibold text-gray-900 flex items-center gap-2">
-            <ImageIcon className="h-5 w-5 text-purple-600" />
+      { modelsAndFigures &&       <div className="group hover:shadow-xl transition-all duration-300 bg-white rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
+        <div className="px-8 py-6 bg-gradient-to-r from-purple-50 to-violet-50 border-b border-purple-100">
+          <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
+            <div className="p-2 bg-purple-500 rounded-lg shadow-sm">
+              <ImageIcon className="h-6 w-6 text-white" />
+            </div>
             Models and Figures
           </h2>
         </div>
-        <div className="px-6 py-4 space-y-4">
+        <div className="px-8 py-6 space-y-6">
           <div className="flex justify-center">
-            <img
-              src={modelsAndFigures.image || "/placeholder.svg"}
-              alt="Case Study Figure"
-              className="max-w-full h-auto rounded-lg border border-gray-200 shadow-sm"
-            />
+            <div className={`relative group/image ${modelsAndFigures.imgStyle || ""}`}>
+              <img
+                src={modelsAndFigures.image || "/placeholder.svg?height=400&width=600"}
+                alt="Case Study Figure"
+                className={`max-w-full h-auto rounded-xl border border-gray-200 shadow-lg transition-transform duration-300  group-hover/image:scale-105`}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl opacity-0 group-hover/image:opacity-100 transition-opacity duration-300"></div>
+            </div>
           </div>
-          <div className="text-gray-700 leading-relaxed">{modelsAndFigures.description}</div>
+          <div className="text-gray-700 leading-relaxed text-lg font-medium">{modelsAndFigures.description}</div>
         </div>
-      </div>
+      </div>}
 
       {/* Efficiency Analysis */}
-      <div className="bg-white rounded-lg border border-gray-200 shadow-sm">
-        <div className="px-6 py-4 border-b border-gray-200">
-          <h2 className="text-xl font-semibold text-gray-900 flex items-center gap-2">
-            <Clock className="h-5 w-5 text-orange-600" />
+      <div className="group hover:shadow-xl transition-all duration-300 bg-white rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
+        <div className="px-8 py-6 bg-gradient-to-r from-orange-50 to-amber-50 border-b border-orange-100">
+          <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
+            <div className="p-2 bg-orange-500 rounded-lg shadow-sm">
+              <Clock className="h-6 w-6 text-white" />
+            </div>
             Efficiency Analysis
           </h2>
         </div>
-        <div className="px-6 py-4">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="space-y-2">
-              <div className="flex items-center gap-2">
-                <Clock className="h-4 w-4 text-orange-500" />
-                <h4 className="font-semibold text-gray-800">Time Complexity</h4>
+        <div className="px-8 py-6">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-4 p-6 bg-gradient-to-br from-orange-50 to-red-50 rounded-xl border border-orange-100">
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-orange-500 rounded-lg shadow-sm">
+                  <Clock className="h-5 w-5 text-white" />
+                </div>
+                <h4 className="font-bold text-gray-800 text-lg">Time Complexity</h4>
               </div>
-              <div className="text-gray-700 leading-relaxed pl-6">{efficiencyAnalysis.timeComplexity}</div>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center gap-2">
-                <HardDrive className="h-4 w-4 text-blue-500" />
-                <h4 className="font-semibold text-gray-800">Space Complexity</h4>
+              <div className="text-gray-700 leading-relaxed text-lg font-medium pl-2">
+                {efficiencyAnalysis.timeComplexity}
               </div>
-              <div className="text-gray-700 leading-relaxed pl-6">{efficiencyAnalysis.spaceComplexity}</div>
             </div>
+            {efficiencyAnalysis.spaceComplexity && (
+              <div className="space-y-4 p-6 bg-gradient-to-br from-yellow-50 to-amber-50 rounded-xl border border-yellow-100">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-yellow-500 rounded-lg shadow-sm">
+                    <HardDrive className="h-5 w-5 text-white" />
+                  </div>
+                  <h4 className="font-bold text-gray-800 text-lg">Space Complexity</h4>
+                </div>
+                <div className="text-gray-700 leading-relaxed text-lg font-medium pl-2">
+                  {efficiencyAnalysis.spaceComplexity}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
 
       {/* Overall Impact and References */}
-      <div className="bg-white rounded-lg border border-gray-200 shadow-sm">
-        <div className="px-6 py-4 border-b border-gray-200">
-          <h2 className="text-xl font-semibold text-gray-900 flex items-center gap-2">
-            <BookOpen className="h-5 w-5 text-red-600" />
+      <div className="group hover:shadow-xl transition-all duration-300 bg-white rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
+        <div className="px-8 py-6 bg-gradient-to-r from-red-50 to-pink-50 border-b border-red-100">
+          <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
+            <div className="p-2 bg-red-500 rounded-lg shadow-sm">
+              <BookOpen className="h-6 w-6 text-white" />
+            </div>
             Overall Impact and References
           </h2>
         </div>
-        <div className="px-6 py-4">
-          <div className="text-gray-700 leading-relaxed">{overallImpactAndReferences}</div>
+        <div className="px-8 py-6">
+          <div className="text-gray-700 leading-relaxed text-lg font-medium">{overallImpactAndReferences}</div>
         </div>
       </div>
 
       {/* Inferences and Impact */}
-      <div className="bg-white rounded-lg border border-gray-200 shadow-sm">
-        <div className="px-6 py-4 border-b border-gray-200">
-          <h2 className="text-xl font-semibold text-gray-900 flex items-center gap-2">
-            <Lightbulb className="h-5 w-5 text-yellow-600" />
+      {inferencesAndImpact && <div className="group hover:shadow-xl transition-all duration-300 bg-white rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
+        <div className="px-8 py-6 bg-gradient-to-r from-yellow-50 to-amber-50 border-b border-yellow-100">
+          <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
+            <div className="p-2 bg-yellow-500 rounded-lg shadow-sm">
+              <Lightbulb className="h-6 w-6 text-white" />
+            </div>
             Inferences and Impact
           </h2>
         </div>
-        <div className="px-6 py-4">
-          <div className="text-gray-700 leading-relaxed">{inferencesAndImpact}</div>
+        <div className="px-8 py-6">
+          <div className="text-gray-700 leading-relaxed text-lg font-medium">{inferencesAndImpact}</div>
         </div>
-      </div>
+      </div>}
     </div>
   )
 }

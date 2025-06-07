@@ -6,6 +6,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import logo from "../../../public/logo.png";
 
 const Footer = () => {
     let date = new Date();
@@ -17,7 +18,8 @@ const Footer = () => {
             <span>Dedicated to creating impactful solutions!</span>
           </Col>
           <Col md="4" className="footer-copywright">
-            <span>Copyright © {year}</span>
+            <span className="flex">Copyright © {year} <img src={logo} className="img-fluid logo scale-150 ml-6" alt="logo" />
+            </span>
           </Col>
           <Col md="4" className="footer-body">
             <ul className="footer-icons">

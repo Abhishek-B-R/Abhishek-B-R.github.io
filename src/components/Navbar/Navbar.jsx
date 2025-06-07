@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../../../public/logo.jpeg";
+import logo from "../../../public/logo.png";
 // import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 // import { CgGitFork } from "react-icons/cg";
@@ -95,6 +95,21 @@ function NavBar() {
                 </div>
               </Nav.Link>
             </Nav.Item>
+            
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/cases"
+                onClick={() => updateExpanded(false)}
+              >
+              <div className="flex">
+                  <div className="mt-1 mr-2">
+                    <GiSuitcase style={{ marginBottom: "2px" }} /> 
+                  </div>
+                  Buisness Cases
+                </div>
+              </Nav.Link>
+            </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
@@ -122,21 +137,6 @@ function NavBar() {
                     <AiOutlineContacts style={{ marginBottom: "2px" }} /> 
                   </div>
                   Contact Me
-                </div>
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/cases"
-                onClick={() => updateExpanded(false)}
-              >
-              <div className="flex">
-                  <div className="mt-1 mr-2">
-                    <GiSuitcase style={{ marginBottom: "2px" }} /> 
-                  </div>
-                  Buisness Cases
                 </div>
               </Nav.Link>
             </Nav.Item>
