@@ -128,6 +128,8 @@ return dist  # shortest distances from src to all nodes`,
         <p className="mb-4">
           Thus, graph-based route planning is deeply embedded in Zomato's stack, alongside map enhancements (Zomato
           builds dense road maps from GPS data) to improve routing accuracy.
+          <a href="https://blog.zomato.com/elements-of-scalable-machine-learning#:~:text=5" target="_blank">Ref: Zomato Blogs </a>
+          <a href="https://bytes.swiggy.com/assignment-routing-optimization-for-swiggy-instamart-delivery-part-i-2e8fb3115463?gi=0ecedf65dd92#:~:text=with%20existing%20batches%20until%20an,Yuvraj" target="_blank"> Swiggy Blogs </a>
         </p>
       </div>
     ),

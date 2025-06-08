@@ -44,7 +44,7 @@ print("Max gain:", knapsack(values, weights, budget))
     },
 
     modelsAndFigures: {
-      image: "./public/case8.png",
+      image: "https://abhishek-b-r.github.io/case8.png",
       description: (
         <div>
           <p className="mb-4">

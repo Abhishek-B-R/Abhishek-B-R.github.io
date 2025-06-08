@@ -27,6 +27,7 @@ export default function CaseOne() {
             For more complex cost-weighted matching, one can use the Hungarian algorithm. Indeed, studies note that 
             “the Hungarian algorithm is used to solve [taxi–passenger] assignment every time we book an Uber or Ola”, 
             and similar methods apply to Zomato’s rider-order matching.
+            <a href="https://medium.com/data-science/optimum-assignment-and-the-hungarian-algorithm-8b1027628028#:~:text=minimized,book%20a%20Uber%20or%20Ola" target="_blank">Ref: Medium</a>
           </p>
         </div>
       ),
@@ -92,6 +93,7 @@ print(matches, pairing)  # e.g. 3 matched orders, with pairing[v]=driver
           higher on-time performance, and better driver utilization. Faster order fulfillment improves customer 
           satisfaction and allows handling more orders per hour, thus increasing revenue. Inference: even a small 
           improvement in match quality can yield significant cost savings and throughput gains.
+          <a href="https://medium.com/data-science/optimum-assignment-and-the-hungarian-algorithm-8b1027628028#:~:text=minimized,book%20a%20Uber%20or%20Ola" target="_blank">Ref: Medium</a>
         </p>
       </div>
     ),

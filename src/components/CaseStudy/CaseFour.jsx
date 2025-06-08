@@ -91,14 +91,16 @@ preds = clf.predict(X_test)
       <div>
         <p className="mb-4">
           Many food delivery companies build churn models to drive retention. For instance, practitioners identify 
-          patterns (e.g. single-cuisine consumers churn more <a href="https://medium.com" target="_blank">Ref: Medium</a>) and train classifiers 
+          patterns (e.g. single-cuisine consumers churn more 
+          <a href="https://medium.com/@lorenzo.ruhtag/prediction-of-churn-in-food-delivery-app-94549291147f#:~:text=Examining%20the%20histogram%20chart%20provides,it%20is%20difficult%20to%20draw" target="_blank">Ref: Medium</a>) and train classifiers 
           to score users. 
         </p>
         <p className="mb-4">
           A reference architecture involves streaming all user events, merging with historical data, and running an ML 
           model to flag churn risk. In industry terms, Zomato likely analyzes session logs, orders, and loyalty 
           engagement to compute features for churn scoring. (While we lack a public Zomato blog on churn, online 
-          examples and Kaggle cases confirm its importance.)  <a href="https://medium.com" target="_blank">Ref: Medium</a>
+          examples and Kaggle cases confirm its importance.)  
+          <a href="https://medium.com/@lorenzo.ruhtag/prediction-of-churn-in-food-delivery-app-94549291147f#:~:text=The%20main%20objective%20of%20this,The%20specific%20objectives%20include" target="_blank">Ref: Medium</a>
         </p>
       </div>
     ),

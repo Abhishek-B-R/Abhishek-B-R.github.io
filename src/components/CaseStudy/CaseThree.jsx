@@ -86,16 +86,16 @@ label = clf.predict([features_new])  # -1 => anomaxly (fraud), 1 => normal
       <div>
         <p className="mb-4">
           Zomato has built a real-time data platform with Kafka and Flink to handle time-critical tasks
-          <a href="https://blog.zomato.com" target="_blank"><br/>Ref: zomato blogs </a>
+          <a href="https://blog.zomato.com/apache-flink-journey-zomato-from-inception-to-innovation#:~:text=Our%20journey%20into%20real,where%20timely%20action%20is%20essential" target="_blank"><br/>Ref: zomato blogs </a>
           . Similar mobility platforms (Uber, Grab) use streaming to “detect anomalies in GPS, join payment
            and user streams, and apply ML to block suspicious transactions before completion”
-          <a href="https://kai-waehner.de" target="_blank"> Ref: kai-waehner </a>
+          <a href="https://www.kai-waehner.de/blog/2025/04/28/fraud-detection-in-mobility-services-ride-hailing-food-delivery-with-data-streaming-using-apache-kafka-and-flink/#:~:text=Apache%20Flink%20enables%20real,event%20correlation%20and%20applied%20AI" target="_blank"> Ref: kai-waehner </a>
           . For example, Grab’s fraud engine ingests device fingerprints, payments, and ride data in-stream
            to produce fraud risk scores
-          <a href="https://kai-waehner.de" target="_blank"> Ref: kai-waehner </a>
+          <a href="https://www.kai-waehner.de/blog/2025/04/28/fraud-detection-in-mobility-services-ride-hailing-food-delivery-with-data-streaming-using-apache-kafka-and-flink/#:~:text=,transactions%20before%20they%20are%20completed" target="_blank"> Ref: kai-waehner </a>
           . A Kafka–Flink pipeline can thus detect Zomato fraud in-flight. This aligns with industry practice
            of proactive fraud prevention (e.g. DoorDash migrating to real-time streaming
-          <a href="https://kai-waehner.de" target="_blank"> Ref: kai-waehner </a>
+          <a href="https://www.kai-waehner.de/blog/2025/04/28/fraud-detection-in-mobility-services-ride-hailing-food-delivery-with-data-streaming-using-apache-kafka-and-flink/#:~:text=An%20excellent%20success%20story%20about,to%20Apache%20Kafka%20and%20Flink" target="_blank"> Ref: kai-waehner </a>
           ).
         </p>
       </div>

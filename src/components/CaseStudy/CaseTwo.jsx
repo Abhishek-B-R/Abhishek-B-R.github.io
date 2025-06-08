@@ -178,11 +178,11 @@ def recommend_for_user(user_idx, ratings, K=5):
         </p>
         <p className="mb-4">
           <strong>Sources:</strong> Zomato’s engineering blog and related tech articles were referenced for these case studies<br/>
-          <a href="https://blog.zomato.com" target="_blank">Ref: Zomato blogs, </a>
-          <a href="https://bytes.swiggy.com" target="_blank"> Swiggy blogs, </a>  
-          <a href="https://medium.com" target="_blank"> Medium, </a>
-          <a href="https://uber.com" target="_blank"> Uber, </a>
-          <a href="https://medium.com" target="_blank"> Medium, </a>
+          <a href="https://blog.zomato.com/elements-of-scalable-machine-learning#:~:text=Restaurant%20recommendations%20are%20powered%20through,implementation%20of%20LightGBMs%20called%20LGBMRanker" target="_blank">Ref: Zomato blogs, </a>
+          <a href="https://bytes.swiggy.com/assignment-routing-optimization-for-swiggy-instamart-delivery-part-i-2e8fb3115463?gi=0ecedf65dd92#:~:text=So%2C%20we%20break%20the%20problem,obtain%20a%20good%20quality%20solution" target="_blank"> Swiggy blogs, </a>  
+          <a href="https://medium.com/@bhavesh.chaudhari221/zomato-complexity-algorithms-a-taste-of-tech-behind-the-table-db26efda9ef3#:~:text=8" target="_blank"> Medium, </a>
+          <a href="https://www.uber.com/blog/fraud-detection/#:~:text=Graph%20learning%20methods%20have%20been,A" target="_blank"> Uber, </a>
+          <a href="https://medium.com/@bhavesh.chaudhari221/zomato-complexity-algorithms-a-taste-of-tech-behind-the-table-db26efda9ef3#:~:text=4,Matrix%20Factorization" target="_blank"> Medium, </a>
           . These include Zomato’s own ML infrastructure posts and external analyses (Swiggy/Uber blogs, Medium summaries). Each case study’s models and conclusions are grounded in these published insights and algorithmic principles.
         </p>
       </div>

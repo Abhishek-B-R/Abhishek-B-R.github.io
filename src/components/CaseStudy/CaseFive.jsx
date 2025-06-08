@@ -11,13 +11,13 @@ export default function CaseFive() {
           spikes (by city, time of day, weather, events) is vital for inventory, staffing, and promotions. For 
           example, Zomato’s Hyperpure fresh ingredients business uses “AI-backed inventory management, demand 
           forecasting” to reduce costs
-          <a href="https://medium.com" target="_blank"> Ref: Medium</a>.
+          <a href="https://medium.com/ivy-insights/base-camp-zomato-scaling-the-everest-of-foodtech-with-hyperpure-853bf9f57f8d#:~:text=,reduced%20par%20with%20competitive%20pricing" target="_blank"> Ref: Medium</a>.
         </p>
         <p className="mb-4">
           In delivery, real-time demand forecasting enables dynamic resource allocation and intelligent dispatch. 
           In fact, an equity report notes Zomato has built capabilities for “real-time, demand forecasting, 
           fleet optimization, … and intelligent dispatch”
-          <a href="https://bsmedia.business-standard.com" target="_blank"> Ref: bsmedia</a>.
+          <a href="https://bsmedia.business-standard.com/_media/bs/data/market-reports/equity-brokertips/2021-09/16310789130.82535700.pdf#:~:text=strengthen%20its%20logistics%20network%20to,of%20orders%20and%20delivery%20partners" target="_blank"> Ref: bsmedia</a>.
         </p>
       </div>
     ),
@@ -58,7 +58,7 @@ forecast = model_fit.forecast(steps=6)  # predict next 6 hours
             from mobility platforms) shows data streaming through Kafka, real-time processing with Flink, and ML 
             serving. Zomato could use a similar pipeline: incoming order events update time-series aggregates, 
             an online model forecasts demand, and alerts/dispatch signals are generated. (See above figure adapted 
-            from industry <a href="https://kai-waehner.de" target="_blank">Reference: kai-waehner</a>.)
+            from industry <a href="https://www.kai-waehner.de/blog/2025/04/28/fraud-detection-in-mobility-services-ride-hailing-food-delivery-with-data-streaming-using-apache-kafka-and-flink/#:~:text=Apache%20Kafka%3A%20The%20Backbone%20of,Driven%20Fraud%20Detection" target="_blank">Reference: kai-waehner</a>.)
           </p>
         </div>
       ),
@@ -99,7 +99,7 @@ forecast = model_fit.forecast(steps=6)  # predict next 6 hours
         <p className="mb-4">
           According to Kotak Institutional research, Zomato has invested in “real-time demand forecasting” to handle 
           complex delivery logistics
-          <a href="https://bsmedia.business-standard.com" target="_blank"> Ref: bsmedia</a>. In Hyperpure 
+          <a href="https://bsmedia.business-standard.com/_media/bs/data/market-reports/equity-brokertips/2021-09/16310789130.82535700.pdf#:~:text=strengthen%20its%20logistics%20network%20to,of%20orders%20and%20delivery%20partners" target="_blank"> Ref: bsmedia</a>. In Hyperpure 
           (restaurant supplies), demand forecasting is already used to optimize warehouse inventory. 
         </p>
         <p className="mb-4">
@@ -110,13 +110,13 @@ forecast = model_fit.forecast(steps=6)  # predict next 6 hours
         </p>
         <p className="mb-4">
           Zomato’s own tech blog discusses its shift to real-time stream processing (Kafka, Flink) for critical use cases
-          <a href="https://blog.zomato.com" target="_blank">Ref: Zomato Blogs</a>
+          <a href="https://blog.zomato.com/apache-flink-journey-zomato-from-inception-to-innovation#:~:text=Our%20journey%20into%20real,where%20timely%20action%20is%20essential" target="_blank">Ref: Zomato Blogs</a>
           . Analyst reports note Zomato’s investment in machine-learning capabilities like demand forecasting and intelligent dispatch
-                    <a href="https://bsmedia.business-standard.com" target="_blank"> Ref: bsmedia</a>
+                    <a href="https://bsmedia.business-standard.com/_media/bs/data/market-reports/equity-brokertips/2021-09/16310789130.82535700.pdf#:~:text=strengthen%20its%20logistics%20network%20to,of%20orders%20and%20delivery%20partners" target="_blank"> Ref: bsmedia</a>
           . Similar industry examples (Grab, Lyft) demonstrate data-driven fraud detection and demand forecasting in mobility services
-                    <a href="https://kai-waehner.de" target="_blank"> Ref: kai-waehner</a>  
+                    <a href="https://www.kai-waehner.de/blog/2025/04/28/fraud-detection-in-mobility-services-ride-hailing-food-delivery-with-data-streaming-using-apache-kafka-and-flink/#:~:text=Apache%20Flink%20enables%20real,event%20correlation%20and%20applied%20AI" target="_blank"> Ref: kai-waehner</a>  
           . The use of churn analytics and forecasting is a well-known strategy in foodtech, as outlined in practitioner articles
-                    <a href="https://medium.com" target="_blank"> Ref: Medium</a> 
+                    <a href="https://medium.com/ivy-insights/base-camp-zomato-scaling-the-everest-of-foodtech-with-hyperpure-853bf9f57f8d#:~:text=,reduced%20par%20with%20competitive%20pricing" target="_blank"> Ref: Medium</a> 
           . These sources ground our case studies in realistic Zomato-like scenarios.
         </p>
       </div>
