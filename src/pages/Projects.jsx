@@ -6,6 +6,7 @@ import decentrack from "../assets/projects/decentrack.png";
 import chess from "../assets/projects/chess.png";
 import chatapp from "../assets/projects/chatapp.png";
 import miniProject from "../assets/projects/mini-project.png";
+import secondbrain from "../assets/projects/secondbrain.png";
 
 const Projects = () => {
   return (  
@@ -42,6 +43,16 @@ const Projects = () => {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={secondbrain}
+              isBlog={false}
+              title="Second Brain"
+              description="Second Brain is a personal knowledge management website designed to help users capture, organize, and retrieve information effortlessly. Inspired by the concept of building a digital extension of your memory, it offers features like note-taking, tagging, search, and linking between ideas. Built with modern web technologies, it provides a clean, intuitive interface for managing knowledge and boosting productivity. It even has a chrome extension for quick note capture from anywhere on the web. Both the frontend and backend are built with Next.js, ensuring a seamless user experience and fast performance."
+              ghLink="https://github.com/Abhishek-B-R/second-brain"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={chatapp}
               isBlog={false}
               title="ChatApp"
@@ -57,7 +68,7 @@ const Projects = () => {
               isBlog={false}
               title="Chess.com Clone"
               description="This full-stack Chess.com clone offers a feature-rich multiplayer chess platform with a polished frontend built using Next.js and TailwindCSS. Players can create or join real-time matches with others via WebSockets, supporting smooth and synchronized gameplay. The platform also includes a bot mode for solo games, powered by a built-in AI engine. To enhance player experience, daily chess puzzles are integrated from the open-source Lichess dataset, allowing users to practice tactics and improve skills. Additional features include real-time match timers, in-game chat, player rankings, and a match history review system. The backend is built with Node.js and Socket.io, providing robust multiplayer support and real-time communication."
-              ghLink="https://github.com/Abhishek-B-R/chess"
+              ghLink="https://github.com/Abhishek-B-R/chess.com-ui-clone"
             />
           </Col>
 
@@ -72,15 +83,6 @@ const Projects = () => {
             />
           </Col>
 
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatapp}
-              isBlog={false}
-              title="Solidity Kickstart"
-              description="Solidity Kickstart is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It includes all the functionality of a kickstart platform, enabling users to interact with their Metamask wallet, transfer Ethereum and participate in kickstart campaigns."
-              ghLink="https://github.com/Abhishek-B-R/Solidity-Kickstart"
-            />
-          </Col> */}
         </Row>
       </Container>
     </Container>

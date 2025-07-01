@@ -6,7 +6,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
-import logo from "../../../public/logo.png";
+import logo from "/logo.png";
 
 const Footer = () => {
     let date = new Date();
